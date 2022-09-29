@@ -303,7 +303,7 @@ h1 {
   border-radius: 1em;
 }
 
-/* 空心子弹 */
+
 .wrapper:nth-child(27) .box::before {
   content: "";
   position: absolute;
@@ -314,28 +314,28 @@ h1 {
   border-right-color: #3b82f6;
 }
 
-/* 畸形空心子弹 */
+/* 空心子弹 */
 .wrapper:nth-child(28) .box {
   height: 3em;
   border: 3em solid #3b82f6;
   border-radius: 0 50% 50% 0;
 }
 
-/* 跑道 */
+/* 畸形空心子弹 */
 .wrapper:nth-child(29) .box {
   height: 3em;
   border: 3em solid #3b82f6;
   border-radius: 3em 50% 50% 3em / 3em 45% 45% 3em;
 }
 
-/* 爱心 */
+/* 跑道 */
 .wrapper:nth-child(30) .box {
   height: 4em;
   border: 3em solid #3b82f6;
   border-radius: 30% / 50%;
 }
 
-/* opera logo */
+/* 爱心 */
 .wrapper:nth-child(31) .box {
   position: relative;
   width: 5em;
@@ -359,6 +359,7 @@ h1 {
   transform: rotate(45deg);
 }
 
+/* opera logo */
 .wrapper:nth-child(32) .box {
   width: 3em;
   height: 8em;
@@ -366,5 +367,3 @@ h1 {
   border-width: 1em 3em;
   border-radius: 50%;
 }
-
-/*# sourceMappingURL=main.css.map */

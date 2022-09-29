@@ -1,0 +1,105 @@
+main{
+    max-width: 100em;
+    margin: 0 auto;
+}
+
+#color_picker {
+  width: 20em;
+}
+
+#color_color {
+  position: relative;
+  width: 100%;
+  height: 10em;
+  background-color: rgb(255, 0, 0);
+}
+
+#color_sat {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to right, #fff, rgba(204, 154, 129, 0));
+}
+
+#color_val {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to top, #000, rgba(204, 154, 129, 0));
+}
+
+#color_dragger {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0.5em;
+  height: 0.5em;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background-color: #fff;
+  border: 1px solid #000;
+}
+
+#color_h {
+  position: relative;
+  width: 100%;
+  height: 1em;
+  margin: 0.5em 0;
+  background: -webkit-linear-gradient(
+    left,
+    #ff0000 0%,
+    #ffff00 17%,
+    #00ff00 33%,
+    #00ffff 50%,
+    #0000ff 67%,
+    #ff00ff 83%,
+    #ff0000 100%
+  );
+}
+
+#color_alpha {
+  position: relative;
+  width: 100%;
+  height: 1em;
+  margin: 0.5em 0;
+  background-image: url(https://s1.ax1x.com/2022/04/17/LN6aCR.png);
+}
+
+#color_h_dragger,
+#color_alpha_dragger {
+  position: absolute;
+  top: -10%;
+  left: 100%;
+  width: 0.5em;
+  height: 120%;
+  transform: translateX(-50%);
+  background-color: #d1d5db;
+}
+
+#color_alpha_inner {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0)
+    linear-gradient(to right, rgba(255, 0, 0, 0), rgb(255, 0, 0)) repeat scroll
+    0% 0%;
+}
+
+#color_preview_wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  margin: 0.5em 0;
+}
+
+#color_preview {
+  width: 2em;
+  height: 2em;
+  background-color: rgb(0, 0, 0);
+  border: 2px solid #eee;
+}
+
+#color_preview_text {
+  flex-grow: 1;
+  width: 1em;
+  margin-left: 1em;
+  height: 1.5em;
+}
