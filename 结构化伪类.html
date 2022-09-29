@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>结构化伪类</title>
+    <style>
+        table {
+            margin: 0 auto;
+            /* 用于设置td之间的距离 */
+            border-spacing: 0px;
+            /* border-collapse可以用来设置表格边框合并，如果设置了该属性，border-spacing会失效 */
+            border-collapse: collapse;
+            /* border-collapse: collapse和border-radius不兼容 */
+        }
+
+        tr {
+            margin: 0;
+            padding: 0;
+        }
+
+        th,
+        td {
+            text-align: center;
+            padding: 4px 8px;
+            border: 1px solid burlywood;
+        }
+
+        tr {
+            cursor: pointer;
+            transition: .3s;
+        }
+
+        tr.disabled{
+            color: #999;
+        }
+
+        /* 隔行不同色，并且跳过行头 */
+        tr:nth-child(2n+3) {
+            background-color: lightgrey;
+        }
+
+        /* 鼠标扫过时变色，排除不可用项 */
+        tr:nth-child(n+2):not(.disabled):hover {
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th>姓名</th>
+            <th>性别</th>
+            <th>邮箱</th>
+        </tr>
+        <tr>
+            <td>ec50n9</td>
+            <td>男</td>
+            <td>shelloworld@qq.com</td>
+        </tr>
+        <tr>
+            <td>ec50n9</td>
+            <td>男</td>
+            <td>shelloworld@qq.com</td>
+        </tr>
+        <tr>
+            <td>ec50n9</td>
+            <td>男</td>
+            <td>shelloworld@qq.com</td>
+        </tr>
+        <tr>
+            <td>ec50n9</td>
+            <td>男</td>
+            <td>shelloworld@qq.com</td>
+        </tr>
+        <tr class="disabled">
+            <td>ec50n9</td>
+            <td>男</td>
+            <td>shelloworld@qq.com</td>
+        </tr>
+        <tr>
+            <td>ec50n9</td>
+            <td>男</td>
+            <td>shelloworld@qq.com</td>
+        </tr>
+    </table>
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>背景</title>
+    <style>
+        .profile-box{
+            position: relative;
+            width: 100%;
+            height: 700px;
+            background-image: url(img/bg.jpeg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            box-shadow: inset 0 -.5em .5em rgba(0, 0, 0, .2);
+        }
+
+        .profile-photo{
+            position: absolute;
+            bottom: -60px;
+            left: 5%;
+            width: 160px;
+            min-height: 200px;
+            background-color: #fff;
+            border: 8px solid #fff;
+            border-radius: .5em;
+            box-shadow: .25em .25em .5em rgba(0, 0, 0, .2);
+            overflow: hidden;
+        }
+
+        .profile-photo > img{
+            width: 160px;
+            min-height: 200px;
+        }
+
+        .profile-photo > h1{
+            margin: 8px 0;
+            font-size: 1rem;
+            text-align: center;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .test{
+            height: 1000px;
+            background-color: #fff;
+            background-image: linear-gradient(
+                transparent,
+                transparent 50%,
+                rgba(55, 110, 176, .2) 50%
+            ), linear-gradient(
+                to right,
+                transparent,
+                transparent 50%,
+                rgba(55, 110, 176, .2) 50%
+            );
+            background-size: 40px 40px;
+        }
+
+        .test-btn{
+            padding: 8px 16px;
+            margin-top: 80px;
+            border: none;
+            border-radius: 1em;
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+    <header class="profile-box" role="banner">
+        <div class="profile-photo">
+            <img src="img/cat.jpeg" alt="Charles the Cat">
+            <h1 class="username">@ec50n9asdfafasdfsadfasdfasfasdfasdfasdsa</h1>
+        </div>
+    </header>
+    <div class="test">
+        <button class="test-btn">你好，世界</button>
+    </div>
+</body>
+</html>

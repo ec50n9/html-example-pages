@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>响应式</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .wrapper {
+            width: 95%;
+            max-width: 76em;
+            margin: 0 auto;
+        }
+
+        .masthead {
+            background-color: cadetblue;
+            overflow: auto;
+        }
+
+        .masthead h1 {
+            font-size: 1.5em;
+        }
+
+        .navbar {
+            background-color: #486a8e;
+        }
+
+        .navlist {
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navlist li {
+            flex-grow: 1;
+            text-align: center;
+        }
+
+        .navlist a {
+            display: block;
+            text-decoration: none;
+            line-height: 1.75em;
+            padding: .5em;
+            color: #fff;
+            text-transform: uppercase;
+        }
+
+        .row {
+            padding: 0;
+            margin: 0 4px;
+        }
+
+        .row::after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        .row-quartet>* {
+            width: 25%;
+        }
+
+        .row-trio>* {
+            width: 33.3333%;
+        }
+
+        .col {
+            float: left;
+            width: 100%;
+            box-sizing: border-box;
+            padding: 4px;
+        }
+
+        .subcategory-header {
+            /* width: 20%; */
+        }
+
+        .subcategory-content {
+            /* width: 80%; */
+        }
+
+        .subcategory-featured {
+            /* width: 50%; */
+        }
+
+        .subcategory-header h2 {
+            margin: 0;
+        }
+
+        @media only screen and (min-width:35em) {
+            .row-quartet>*{
+                width: 50%;
+            }
+            .subcategory-featured{
+                width: 100%;
+            }
+        }
+
+        @media only screen and (min-width:50em){
+            .row-quartet>*{
+                width: 25%;
+            }
+            .row-trio>*{
+                width: 33.3333%;
+            }
+            .subcategory-featured{
+                width: 50%;
+            }
+        }
+
+        @media only screen and (min-width:70em){
+            .subcategory-header{
+                width: 20%;
+            }
+            .subcategory-content{
+                width: 80%;
+            }
+        }
+
+        .story{
+            height: 100%;
+            box-sizing: border-box;
+            padding: 8px;
+            background-color:antiquewhite;
+        }
+
+        .story .img-wrapper {
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-bottom: 50%;
+        }
+
+        .story img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="masthead">
+        <div class="wrapper">
+            <h1>Import News</h1>
+        </div>
+    </header>
+    <nav role="navigation" class="navbar">
+        <div class="wrapper">
+            <ul class="navlist">
+                <li><a href="/">Home</a></li>
+                <li><a href="/">World</a></li>
+                <li><a href="/">Local</a></li>
+                <li><a href="/">Sports</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main class="wrapper">
+        <section class="subcategory">
+            <div class="row">
+                <header class="col subcategory-header">
+                    <h2>aaa</h2>
+                </header>
+                <div class="col subcategory-content">
+                    <div class="row row-quartet">
+                        <div class="col subcategory-featured">
+                            <div class="story">
+                                <div class="img-wrapper">
+                                    <img src="img/bg.jpeg" alt="bg">
+                                </div>
+                                <h3>你好，世界</h3>
+                                <div>hellohakldfjalkdfjlad</div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="story">
+                                <div class="img-wrapper">
+                                    <img src="img/bg.jpeg" alt="bg">
+                                </div>
+                                <h3>你好，世界</h3>
+                                <div>hellohakldfjalkdfjlad</div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="story">
+                                <div class="img-wrapper">
+                                    <img src="img/bg.jpeg" alt="bg">
+                                </div>
+                                <h3>你好，世界</h3>
+                                <div>hellohakldfjalkdfjlad</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row row-quartet">
+                        <div class="col">
+                            <div class="story">
+                                <div class="img-wrapper">
+                                    <img src="img/bg.jpeg" alt="bg">
+                                </div>
+                                <h3>你好，世界</h3>
+                                <div>hellohakldfjalkdfjlad</div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="story">
+                                <div class="img-wrapper">
+                                    <img src="img/bg.jpeg" alt="bg">
+                                </div>
+                                <h3>你好，世界</h3>
+                                <div>hellohakldfjalkdfjlad</div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="story">
+                                <div class="img-wrapper">
+                                    <img src="img/bg.jpeg" alt="bg">
+                                </div>
+                                <h3>你好，世界</h3>
+                                <div>hellohakldfjalkdfjlad</div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="story">
+                                <div class="img-wrapper">
+                                    <img src="img/bg.jpeg" alt="bg">
+                                </div>
+                                <h3>你好，世界</h3>
+                                <div>hellohakldfjalkdfjlad</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="subcategory">
+            <div class="row">
+                <header class="col subcategory-header">
+                    <h2>aaa</h2>
+                </header>
+                <div class="col subcategory-content">
+                    <div class="row row-trio">
+                        <div class="col">
+                            <div class="story">
+                                <div class="img-wrapper">
+                                    <img src="img/bg.jpeg" alt="bg">
+                                </div>
+                                <h3>你好，世界</h3>
+                                <div>hellohakldfjalkdfjlad</div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="story">
+                                <div class="img-wrapper">
+                                    <img src="img/bg.jpeg" alt="bg">
+                                </div>
+                                <h3>你好，世界</h3>
+                                <div>hellohakldfjalkdfjlad</div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="story">
+                                <div class="img-wrapper">
+                                    <img src="img/bg.jpeg" alt="bg">
+                                </div>
+                                <h3>你好，世界</h3>
+                                <div>hellohakldfjalkdfjlad</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
